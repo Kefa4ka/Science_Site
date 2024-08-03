@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Науковий сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="topics.html">Тематика</a></li>
+                <li><a href="articles.html">Статті</a></li>
+                <li><a href="resources.html">Ресурси</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="section">
+            <h2>Контакт</h2>
+            <p>Ми завжди раді вашим запитанням і відгукам. Ви можете зв'язатися з нами через форму нижче або написати на нашу електронну пошту.</p>
+            <form action="mailto:contact@science-site.com" method="post" enctype="text/plain">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
